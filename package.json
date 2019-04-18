@@ -1,0 +1,22 @@
+{
+  "name": "reports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development PORT=3001 nodemon app.js -L --signal SIGHUP -e js,json --inspect 8888",
+    "start": "NODE_ENV=development PORT=3002 node app.js",
+    "prod": "NODE_ENV=production pm2 app.js",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jsreport": "^2.4.0"
+  },
+  "devDependencies": {
+    "pm2": "^3.5.0"
+  }
+}

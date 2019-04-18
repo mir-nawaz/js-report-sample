@@ -1,0 +1,41 @@
+{
+  "allowLocalFilesAccess": true,
+  "logger": {
+    "console": {
+      "transport": "file",
+      "level": "debug",
+      "filename": "logs/reporter-debug.log",
+      "enabled": false
+    },
+    "file": {
+      "transport": "file",
+      "level": "info",
+      "filename": "logs/reporter-info.log",
+      "enabled": false
+    },
+    "error": {
+      "transport": "file",
+      "level": "error",
+      "filename": "logs/reporter-error.log"
+    }
+  },
+  "templatingEngines": {
+    "numberOfWorkers" : 10,
+    "timeout": 10000
+  },
+  "chrome": {
+    "timeout": 180000
+  },
+  "blobStorage": { "provider": "fs" },
+  "extensions":  {  
+      "authentication"  :  {  
+        "cookieSession":  {  
+          "secret":  "dasd321as56d1sd5s61vdv32"  
+        },  
+        "admin":  {  
+          "username": "admin",
+          "password": "password"  
+        }  
+      }  
+   }
+}
